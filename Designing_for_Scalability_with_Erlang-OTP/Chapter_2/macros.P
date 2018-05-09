@@ -1,0 +1,14 @@
+-file("macros.erl", 1).
+
+-module(macros).
+
+-export([test/0,test_assign/0]).
+
+test() ->
+    2 * (2 * 42).
+
+test_assign() ->
+    X = lists:sum([1,2,3]).
+
+
+
