@@ -23,16 +23,16 @@ There are multiple ways of loading the new code – `c(Module)` in the shell wil
 ### ETS
 Table is linked to the process that creates it, and deleted when that process terminates. `DETS` are available for `D`isk storage.
 
-Set – each key-value tuple can occur only once. `O(n)`
+* Set – each key-value tuple can occur only once. `O(n)`
 
-Ordered set – same restrictions as with sets, but the tuples can be visited in order by key. `O(log n)`
+* Ordered set – same restrictions as with sets, but the tuples can be visited in order by key. `O(log n)`
 
-Bag – each key-value tuple combination can only occur once, but a key can appear multiple times. `O(n)`
+* Bag – each key-value tuple combination can only occur once, but a key can appear multiple times. `O(n)`
 
-Duplicate bag – tuples can be duplicated. `O(n)`
+* Duplicate bag – tuples can be duplicated. `O(n)`
 
 
 ### Distributed Erlang
-The `net_kernel` module allows for fine-grained control of interconnections. In a combination with the `-hidden` flag, this creates a variety of uses, including operations and maintnance, as well as creating bridges between node clusters.
+The `net_kernel` module allows for fine-grained control of interconnections. In a combination with the `-hidden` flag, this creates a variety of uses, including operations and maintnance, as well as creating bridges between node clusters. They are still detectable with `> nodes(hidden)`.
 
 ---
